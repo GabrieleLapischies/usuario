@@ -7,15 +7,18 @@
     < link  rel = " folha de estilo "  type = " text/css "   href = " css/style.css " >
 </ cabeça >
 < corpo >
-    < form  id = " inicial "  method = " post "  action = " calculando.php " >
-        < h1 > Calculadora </ h1 >
-        Primeiro Valor: < input  name = " val1 "  type = " text " >< br >
-        Segundo Valor:< input  name = " val2 "  type = " text " >< br >
-        < input  name = " btn "  type = " submit "  value = " + " >
-        < input  name = " btn "  type = " submit "  value = " - " >
-        < input  name = " btn "  type = " submit "  value = " * " >
-        < input  name = " btn "  type = " submit "  value = " / " >< br >
-        < nome da entrada  = " limpar " tipo = " redefinir " valor = " limpar " >  
-    </forma> 
+    <div class="inicial">
+        <?php
+            If (isset($_post["en"])){
+               $usuario = $_post["us"];
+               $senha = $_post["se"];
+                
+               if ($usuario = "ana" and $senha = "12345"):
+                  echo "Autenticação realizada com sucesso";
+               else
+                  echo "Você não tem permissão de visualizar essa página";
+            }
+        ?>  
+    </div> 
 </ corpo >
 </html> 
