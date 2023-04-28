@@ -7,15 +7,11 @@
     <link rel="stylesheet" type="text/css"  href="css/style.css">
 </head>
 <body>
-    <form id="inicial" method="post" action="calculando.php">
-        <h1> Calculadora </h1>
-        Primeiro Valor: <input name="val1" type="text"><br>
-        Segundo Valor:<input name="val2" type="text"><br>
-        <input name="btn" type="submit" value="+">
-        <input name="btn" type="submit" value="-">
-        <input name="btn" type="submit" value="*">
-        <input name="btn" type="submit" value="/"><br>
-        <input name="limp" type="reset" value="limpar">
+    <form action="aut_usu.php" id="asu" method="post">
+        Usuário: <input name="us" type="text"><br>
+        Senha: <input name="se" type="text"><br>
+        <input name="en" type="submit" value="entrar">
+        <input name="li" type="reset" value="limpar">
     </form>
 </body>
 </html>
